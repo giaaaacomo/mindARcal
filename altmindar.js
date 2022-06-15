@@ -59,8 +59,8 @@
             )
                 return this.el.emit("arError", { error: "VIDEO_FAIL" }), void this.ui.showCompatibility();
             navigator.mediaDevices
-                .getUserMedia({ audio: !1, video: { facingMode: "environment",  width: {ideal: 1920},
-      height: {ideal: 1080} } })
+                .getUserMedia({ audio: !1, video: { facingMode: "environment",  width: {ideal: 2560},
+      height: {ideal: 1920} } })
                 .then((t) => {
                     this.video.addEventListener("loadedmetadata", () => {
                         this.video.setAttribute("width", this.video.videoWidth), this.video.setAttribute("height", this.video.videoHeight), this._startAR();
